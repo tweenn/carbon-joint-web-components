@@ -1,6 +1,6 @@
 import { html } from 'lit';
 
-import '../../js/sequence-diagram';
+import '../../src/sequence-diagram';
 
 export interface SequenceDiagramProps {
 	/**

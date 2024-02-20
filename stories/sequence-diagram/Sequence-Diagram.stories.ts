@@ -1,9 +1,8 @@
 import type { Meta, StoryObj } from '@storybook/web-components';
 import type { SequenceDiagramProps } from './Sequence-Diagram';
 import { SequenceDiagram } from './Sequence-Diagram';
-import defaultProperties from '../../js/sequence-diagram/default-properties';
+import defaultProperties from '../../src/sequence-diagram/default-properties';
 
-// More on how to set up stories at: https://storybook.js.org/docs/writing-stories
 const meta = {
 	title: 'Sequence Diagram',
 	tags: ['autodocs'],
