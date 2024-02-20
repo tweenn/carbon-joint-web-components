@@ -5,7 +5,7 @@ import {
 
 export default () => {
 	window.joint = window?.joint || {
-		dia,
-		shapes
+		dia: {...dia},
+		shapes: {...shapes}
 	};
 };
