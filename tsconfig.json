@@ -4,6 +4,7 @@
 		"module": "ESNext",
 		"moduleResolution": "Node",
 		"experimentalDecorators": true,
+		"useDefineForClassFields": false,
 		"esModuleInterop": true,
 		"noEmit": true,
 		"allowJs": true,

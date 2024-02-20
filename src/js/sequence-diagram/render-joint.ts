@@ -3,7 +3,7 @@ import { gray10, gray20 } from '@carbon/colors'
 export default ({
 	target,
 	config,
-	actors,
+	participants,
 	groups,
 	messages,
 	messageSpans
@@ -41,17 +41,17 @@ export default ({
 
 	paper.el.style.border = `1px solid ${gray20}`;
 
-	const addedActors = {};
+	const addedParticipants = {};
 	const addedLifelines = {};
 
-	actors.forEach((actor) => {
+	participants.forEach((actor) => {
 		actor.position.y += marginActorsY;
 
 		const role = new sd.Role({ position: actor.position });
 		role.setName(actor.name);
 		role.addTo(graph);
 
-		addedActors[actor.id] = role;
+		addedParticipants[actor.id] = role;
 
 		const lifeLine = new sd.Lifeline();
 		lifeLine.attachToRole(role, paperHeight);
@@ -65,7 +65,7 @@ export default ({
 
 		try {
 			group.forEach((actorId) => {
-				backend.embed(addedActors[actorId]);
+				backend.embed(addedParticipants[actorId]);
 			});
 
 			backend.addTo(graph);

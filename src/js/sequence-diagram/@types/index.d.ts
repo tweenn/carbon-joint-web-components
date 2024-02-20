@@ -3,7 +3,7 @@ type Position = {
 	y: number
 };
 
-type Actors = {
+type Participants = {
 	id: string,
 	position: Position,
 	name: string,

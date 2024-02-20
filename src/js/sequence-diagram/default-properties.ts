@@ -1,4 +1,12 @@
-const actors = [
+const configuration = {
+	width: 800,
+	height: 600,
+	marginActorsY: 20,
+	marginMessagesY: 50,
+	marginBetweenMessages: 120
+};
+
+const participants = [
 	{
 		id: 'browser',
 		position: {
@@ -60,7 +68,8 @@ const messageSpans = [
 ];
 
 export default {
-	actors,
+	configuration,
+	participants,
 	groups,
 	messages,
 	messageSpans

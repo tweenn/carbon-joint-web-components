@@ -35,7 +35,7 @@ export class SequenceDiagram extends LitElement {
 	configuration?: Configuration = undefined;
 
 	@property()
-	actors?: Array<Actors> = [];
+	participants?: Array<Participants> = [];
 
 	@property()
 	groups?: Array<Groups> = [];
@@ -54,11 +54,11 @@ export class SequenceDiagram extends LitElement {
 	updated(): void {
 		renderJoint({
 			target: this.diagram,
-			config: this.configuration,
+			config: this.configuration ?? defaultProperties.configuration,
+			participants: this.participants.length > 0 ? this.participants : defaultProperties.participants,
 			groups: this.groups.length > 0 ? this.groups : defaultProperties.groups,
 			messages: this.messages.length > 0 ? this.messages : defaultProperties.messages,
-			messageSpans: this.messageSpans.length > 0 ? this.messageSpans : defaultProperties.messageSpans,
-			actors: this.actors.length > 0 ? this.actors : defaultProperties.actors
+			messageSpans: this.messageSpans.length > 0 ? this.messageSpans : defaultProperties.messageSpans
 		});
 	};
 
