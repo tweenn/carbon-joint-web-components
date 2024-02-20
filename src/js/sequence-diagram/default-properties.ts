@@ -1,7 +1,6 @@
 const configuration = {
 	width: 800,
 	height: 600,
-	marginActorsY: 20,
 	marginMessagesY: 50,
 	marginBetweenMessages: 120
 };
@@ -11,7 +10,7 @@ const participants = [
 		id: 'browser',
 		position: {
 			x: 100,
-			y: 0
+			y: 30
 		},
 		name: 'Browser',
 	},
@@ -19,7 +18,7 @@ const participants = [
 		id: 'web-server',
 		position: {
 			x: 400,
-			y: 0
+			y: 30
 		},
 		name: 'Web Server',
 	},
@@ -27,7 +26,7 @@ const participants = [
 		id: 'database',
 		position: {
 			x: 600,
-			y: 0
+			y: 30
 		},
 		name: 'Database Server'
 	}

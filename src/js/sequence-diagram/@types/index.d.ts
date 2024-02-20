@@ -22,7 +22,6 @@ type MessageSpans = number[];
 type Configuration = undefined | {
 	width: number,
 	height: number,
-	marginActorsY: number,
 	marginMessagesY: number,
 	marginBetweenMessages: number,
 }

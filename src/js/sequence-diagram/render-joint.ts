@@ -13,7 +13,6 @@ export default ({
 
 	const paperWidth = config?.width ?? 800;
 	const paperHeight = config?.height ??  600;
-	const marginActorsY = config?.marginActorsY ??  20;
 	const marginMessagesY = config?.marginMessagesY ??  50;
 	const marginBetweenMessages = config?.marginBetweenMessages ??  100;
 
@@ -45,8 +44,6 @@ export default ({
 	const addedLifelines = {};
 
 	participants.forEach((actor) => {
-		actor.position.y += marginActorsY;
-
 		const role = new sd.Role({ position: actor.position });
 		role.setName(actor.name);
 		role.addTo(graph);
