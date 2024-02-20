@@ -15,8 +15,10 @@
 		"RE-CHECK": "=========================================",
 		"lint": "eslint src",
 		"test": "echo \"Error: no test specified\" && exit 1",
-		"storybook": "storybook dev -p 6006",
-		"build-storybook": "storybook build",
+		"storybook-dev": "storybook dev -p 6006",
+		"storybook-prod": "storybook build",
+		"storybook:serve": "pnpm run clean; pnpm run storybook-dev",
+		"storybook:build": "pnpm run clean; pnpm run storybook-prod",
 		"push:ghpages": "push-dir --dir=storybook-static --branch=gh-pages --force --verbose --cleanup"
 	},
 	"keywords": [],

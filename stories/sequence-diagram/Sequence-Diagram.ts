@@ -41,7 +41,7 @@ export const SequenceDiagram = ({
 		target.groups = groups;
 		target.messages = messages;
 		target.messageSpans = messageSpans;
-	}, 1);
+	}, 500);
 
 	return html`<sequence-diagram />`;
 };
