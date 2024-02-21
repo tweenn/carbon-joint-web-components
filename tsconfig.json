@@ -1,0 +1,20 @@
+{
+	"compilerOptions": {
+		"target": "ESNext",
+		"module": "ESNext",
+		"moduleResolution": "Node",
+		"experimentalDecorators": true,
+		"useDefineForClassFields": false,
+		"esModuleInterop": true,
+		"noEmit": true,
+		"allowJs": true,
+		"checkJs": true,
+		"skipLibCheck": true,
+		"baseUrl": "./",
+		"typeRoots": [
+			"./src/**/@types",
+			"./node_modules/@types"
+		],
+	},
+	"include": ["src/**/*"]
+}
