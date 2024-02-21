@@ -19,7 +19,7 @@ import declareShapes from './shapes';
 
 import renderJoint from './render-joint';
 
-@customElement('sequence-diagram')
+@customElement('joint-sequence-diagram')
 export class SequenceDiagram extends LitElement {
 	public static readonly shadowRootOptions = {
 		mode: 'closed'
@@ -30,7 +30,6 @@ export class SequenceDiagram extends LitElement {
 	@query('#diagram')
 	diagram;
 
-	// Declare reactive properties
 	@property()
 	configuration?: Configuration = undefined;
 

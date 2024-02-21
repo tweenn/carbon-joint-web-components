@@ -37,7 +37,7 @@ export const SequenceDiagram = ({
 	messageSpans = defaultProperties.messageSpans,
 }) => {
 	window.setTimeout(() => {
-		const target = document.getElementsByTagName('sequence-diagram')[0];
+		const target = document.getElementsByTagName('joint-sequence-diagram')[0];
 		target.configuration = configuration;
 		target.participants = participants;
 		target.groups = groups;
@@ -45,5 +45,5 @@ export const SequenceDiagram = ({
 		target.messageSpans = messageSpans;
 	}, 500);
 
-	return html`<sequence-diagram />`;
+	return html`<joint-sequence-diagram />`;
 };
