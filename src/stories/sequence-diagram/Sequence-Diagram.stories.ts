@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/web-components';
 import type { SequenceDiagramProps } from './Sequence-Diagram';
 import { SequenceDiagram } from './Sequence-Diagram';
-import defaultProperties from '../../src/sequence-diagram/default-properties';
+import defaultProperties from '../../components/sequence-diagram/default-properties';
 
 const meta = {
 	title: 'Sequence Diagram',
