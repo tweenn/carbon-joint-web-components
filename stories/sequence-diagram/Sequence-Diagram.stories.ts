@@ -5,7 +5,7 @@ import defaultProperties from '../../src/sequence-diagram/default-properties';
 
 const meta = {
 	title: 'Sequence Diagram',
-	tags: ['autodocs'],
+	tags: ['autodocs', 'sequence', 'diagram'],
 	render: (args) => SequenceDiagram(args),
 	// argTypes: {
 	// 	backgroundColor: { control: 'color' },

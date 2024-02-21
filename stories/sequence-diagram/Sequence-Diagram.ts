@@ -25,7 +25,8 @@ export interface SequenceDiagramProps {
 	messageSpans: Array<MessageSpans>;
 }
 /**
- * Primary UI component for user interaction
+ * @desc The sequence diagram component
+ * mounted with a simple timeout to define properties
  */
 export const SequenceDiagram = ({
 	configuration,
